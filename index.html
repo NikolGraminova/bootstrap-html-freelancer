@@ -100,7 +100,7 @@
     </div>
 
     <!--FORM CONTAINER-->
-    <div class="container-fluid bg-info py-4">
+    <div class="container-fluid bg-info py-4" id="formDiv">
         <div class="container w-75 m-auto text-center pb-3">
             <h2>WANT AN OFFER?</h2>
         </div>
@@ -139,6 +139,7 @@
             <div class="col-sm-12 col-md-6">
                 <label for="inputCode" class="form-label">Discount code</label>
                 <input type="text" class="form-control" id="inputCode" placeholder="">
+                <p id="discountMessage" class="d-none text-danger">Please enter a valid code</p>
             </div>
 
             <div class="form-group">
@@ -151,6 +152,13 @@
                 <button type="submit" class="btn btn-warning">Send</button>
             </div>
         </form>
+    </div>
+
+    <div id="finalContainer" class="d-none container-fluid text-center bg-info py-3">
+        <h2>Your offer is:</h2>
+        <p id="hoursId"></p>
+        <p id="workId"></p>
+        <p id="priceId"></p>
     </div>
 
 
